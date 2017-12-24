@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 class Invitation extends Component {
-  render(){
+  render() {
     const inviteHeader = "You've been invited!";
     return (
-      <h1>{inviteHeader}</h1>
+      <h1>
+        {inviteHeader}
+      </h1>
+      {this.props.children}
     );
-    
   }
-  
-  
 }
